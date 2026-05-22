@@ -1,86 +1,182 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <title>Zury Engenharia</title>
 
   <style>
-    body{
+    *{
       margin:0;
-      font-family:Arial;
-      background:#0f172a;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family: Arial, sans-serif;
+      background:#081426;
       color:white;
     }
 
     header{
-      background:#111827;
-      padding:20px;
+      background:#0d1b2a;
+      padding:30px;
       text-align:center;
-      font-size:32px;
-      font-weight:bold;
+      border-bottom:2px solid #1f3b5c;
+    }
+
+    header h1{
+      font-size:50px;
+      color:#4db8ff;
+    }
+
+    header p{
+      margin-top:10px;
+      color:#d6d6d6;
+      font-size:18px;
     }
 
     .cards{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:20px;
-      padding:30px;
+      width:100%;
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      padding:40px;
+      flex-wrap:wrap;
     }
 
     .card{
-      background:#1e293b;
-      padding:25px;
-      border-radius:12px;
+      background:#13243b;
+      width:350px;
+      padding:30px;
+      border-radius:15px;
+      box-shadow:0 0 15px rgba(0,0,0,0.4);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
     }
 
     .card h2{
-      margin-top:0;
-      color:#38bdf8;
+      color:#4db8ff;
+      margin-bottom:15px;
+      font-size:35px;
+    }
+
+    .card p{
+      font-size:18px;
+      line-height:28px;
+      margin-bottom:25px;
+      color:#f1f1f1;
     }
 
     .botao{
       display:inline-block;
-      margin-top:15px;
+      padding:14px 28px;
       background:#2563eb;
       color:white;
-      padding:10px 20px;
-      border-radius:8px;
       text-decoration:none;
+      border-radius:10px;
+      font-size:18px;
+      font-weight:bold;
+      transition:0.3s;
     }
+
+    .botao:hover{
+      background:#1d4ed8;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      background:#0d1b2a;
+      margin-top:30px;
+      font-size:20px;
+      color:#ffffff;
+    }
+
+    footer a{
+      color:#4db8ff;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
   </style>
 </head>
 
 <body>
 
-<header>
-  Zury Engenharia
-</header>
+  <header>
+    <h1>Zury Engenharia</h1>
+    <p>Painel tecnológico e gerenciamento de engenharia</p>
+  </header>
 
-<div class="cards">
+  <div class="cards">
 
-  <div class="card">
-    <h2>Licitações</h2>
-    <p>Painel de acompanhamento de editais e processos.</p>
-    <a class="botao" href="#">Acessar</a>
+    <div class="card">
+      <h2>Licitações</h2>
+
+      <p>
+        Painel de acompanhamento de editais, processos,
+        contratos e documentos.
+      </p>
+
+      <a
+        class="botao"
+        href="https://wa.me/5573991338963?text=Ol%C3%A1,%20quero%20informa%C3%A7%C3%B5es%20sobre%20Licita%C3%A7%C3%B5es"
+        target="_blank">
+
+        Acessar
+
+      </a>
+    </div>
+
+    <div class="card">
+      <h2>Orçamentos</h2>
+
+      <p>
+        Controle de planilhas, quantitativos,
+        custos de obras e materiais.
+      </p>
+
+      <a
+        class="botao"
+        href="https://wa.me/5573991338963?text=Ol%C3%A1,%20quero%20informa%C3%A7%C3%B5es%20sobre%20Or%C3%A7amentos"
+        target="_blank">
+
+        Abrir
+
+      </a>
+    </div>
+
+    <div class="card">
+      <h2>Projetos</h2>
+
+      <p>
+        Gestão de projetos arquitetônicos,
+        engenharia e documentação técnica.
+      </p>
+
+      <a
+        class="botao"
+        href="https://wa.me/5573991338963?text=Ol%C3%A1,%20quero%20informa%C3%A7%C3%B5es%20sobre%20Projetos"
+        target="_blank">
+
+        Visualizar
+
+      </a>
+    </div>
+
   </div>
 
-  <div class="card">
-    <h2>Orçamentos</h2>
-    <p>Controle de planilhas e custos de obras.</p>
-    <a class="botao" href="#">Abrir</a>
-  </div>
-
-  <div class="card">
-    <h2>Projetos</h2>
-    <p>Gestão de projetos e documentos técnicos.</p>
-    <a class="botao" href="#">Visualizar</a>
-  </div>
-
-</div>
+  <footer>
+    WhatsApp:
+    <a href="https://wa.me/5573991338963" target="_blank">
+      (73) 99133-8963
+    </a>
+  </footer>
 
 </body>
 </html>
-git add .
-git commit -m "Restaurando painel"
-git push
