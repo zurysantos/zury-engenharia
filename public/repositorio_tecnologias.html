@@ -1,146 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Zury Engenharia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zury Engenharia</title>
 
-	<style>
-		* {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
+  <style>
+    body{
+      margin:0;
+      font-family:Arial;
+      background:#0f172a;
+      color:white;
+    }
 
-		body {
-			font-family: Arial, sans-serif;
-			background: #07152e;
-			color: white;
-		}
+    header{
+      background:#111827;
+      padding:20px;
+      text-align:center;
+      font-size:32px;
+      font-weight:bold;
+    }
 
-		header {
-			background: #0b1220;
-			padding: 35px;
-			text-align: center;
-			font-size: 48px;
-			font-weight: bold;
-			color: white;
-			box-shadow: 0 2px 10px rgba(0,0,0,0.4);
-		}
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      padding:30px;
+    }
 
-		.cards {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-			gap: 25px;
-			padding: 40px;
-		}
+    .card{
+      background:#1e293b;
+      padding:25px;
+      border-radius:12px;
+    }
 
-		.card {
-			background: #1b2942;
-			padding: 30px;
-			border-radius: 15px;
-			transition: 0.3s;
-			box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-		}
+    .card h2{
+      margin-top:0;
+      color:#38bdf8;
+    }
 
-		.card:hover {
-			transform: translateY(-5px);
-		}
-
-		.card h2 {
-			color: #38bdf8;
-			margin-bottom: 20px;
-			font-size: 40px;
-		}
-
-		.card p {
-			font-size: 26px;
-			line-height: 1.5;
-			margin-bottom: 30px;
-		}
-
-		.botao {
-			display: inline-block;
-			background: #2563eb;
-			color: white;
-			text-decoration: none;
-			padding: 15px 30px;
-			border-radius: 10px;
-			font-size: 22px;
-			font-weight: bold;
-			transition: 0.3s;
-		}
-
-		.botao:hover {
-			background: #1d4ed8;
-		}
-
-		footer {
-			text-align: center;
-			padding: 30px;
-			color: #94a3b8;
-			font-size: 18px;
-		}
-	</style>
+    .botao{
+      display:inline-block;
+      margin-top:15px;
+      background:#2563eb;
+      color:white;
+      padding:10px 20px;
+      border-radius:8px;
+      text-decoration:none;
+    }
+  </style>
 </head>
 
 <body>
 
-	<header>
-		Zury Engenharia
-	</header>
+<header>
+  Zury Engenharia
+</header>
 
-	<div class="cards">
+<div class="cards">
 
-		<div class="card">
-			<h2>Licitações</h2>
+  <div class="card">
+    <h2>Licitações</h2>
+    <p>Painel de acompanhamento de editais e processos.</p>
+    <a class="botao" href="#">Acessar</a>
+  </div>
 
-			<p>
-				Painel de acompanhamento de editais e processos licitatórios.
-			</p>
+  <div class="card">
+    <h2>Orçamentos</h2>
+    <p>Controle de planilhas e custos de obras.</p>
+    <a class="botao" href="#">Abrir</a>
+  </div>
 
-			<a class="botao"
-				href="https://wa.me/5573991338963?text=Ol%C3%A1,%20quero%20informa%C3%A7%C3%B5es%20sobre%20licita%C3%A7%C3%B5es"
-				target="_blank">
-				Acessar
-			</a>
-		</div>
+  <div class="card">
+    <h2>Projetos</h2>
+    <p>Gestão de projetos e documentos técnicos.</p>
+    <a class="botao" href="#">Visualizar</a>
+  </div>
 
-		<div class="card">
-			<h2>Orçamentos</h2>
-
-			<p>
-				Controle de planilhas, custos de obras e levantamentos.
-			</p>
-
-			<a class="botao"
-				href="https://wa.me/5573991338963?text=Ol%C3%A1,%20quero%20informa%C3%A7%C3%B5es%20sobre%20or%C3%A7amentos"
-				target="_blank">
-				Abrir
-			</a>
-		</div>
-
-		<div class="card">
-			<h2>Projetos</h2>
-
-			<p>
-				Gestão de projetos, documentos técnicos e acompanhamento.
-			</p>
-
-			<a class="botao"
-				href="https://wa.me/5573991338963?text=Ol%C3%A1,%20quero%20informa%C3%A7%C3%B5es%20sobre%20projetos"
-				target="_blank">
-				Visualizar
-			</a>
-		</div>
-
-	</div>
-
-	<footer>
-		WhatsApp: (73) 99133-8963
-	</footer>
+</div>
 
 </body>
-
 </html>
+git add .
+git commit -m "Restaurando painel"
+git push
